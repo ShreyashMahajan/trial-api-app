@@ -8,11 +8,15 @@ function clickHandler(){
    var yearConvert = convertToNumber(yearFinal);
   
  var showLeapYear =  isLeapYear(yearConvert);
+ if(yearConvert){
    if(showLeapYear){
        showMessage("Hey it's a Leap year");
    }else {
        showMessage("Hey it's not a Leap year");
    }
+}else {
+    showMessage("Please enter date");
+}
   
 }
 
